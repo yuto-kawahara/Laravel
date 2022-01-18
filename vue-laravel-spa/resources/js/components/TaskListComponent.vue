@@ -1,15 +1,15 @@
 <template>
     <div class="container">
-        <table class="table table-hover">
-            <thead class="thead-light">
+        <table class="table-auto">
+            <thead class="bg-gray-100">
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Content</th>
-                    <th scope="col">Person In Charge</th>
-                    <th scope="col">Show</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Delete</th>
+                    <th scope="col" class="px-4 py-2">#</th>
+                    <th scope="col" class="px-4 py-2">Title</th>
+                    <th scope="col" class="px-4 py-2">Content</th>
+                    <th scope="col" class="px-4 py-2">Person In Charge</th>
+                    <th scope="col" class="px-4 py-2">Show</th>
+                    <th scope="col" class="px-4 py-2">Edit</th>
+                    <th scope="col" class="px-4 py-2">Delete</th>
                 </tr>
             </thead>
             <tbody>
