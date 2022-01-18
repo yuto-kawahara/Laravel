@@ -13,6 +13,7 @@
 <div id="app">
   <header-component></header-component>
   <router-view></router-view>
+  <message-component></message-component>
 </div>
 <script src="{{ mix('js/app.js') }}"></script>
 </body>
