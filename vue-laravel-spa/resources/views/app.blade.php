@@ -14,6 +14,7 @@
   <header-component></header-component>
   <router-view></router-view>
   <message-component></message-component>
+  <counter-component></counter-component>
 </div>
 <script src="{{ mix('js/app.js') }}"></script>
 </body>
