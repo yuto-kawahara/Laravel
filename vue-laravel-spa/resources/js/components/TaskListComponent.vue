@@ -60,6 +60,9 @@
                 </tr>
             </tbody>
         </table>
+        <router-link v-bind:to="{ name: 'home' }">
+            <button class="btn">Home</button>
+        </router-link>
     </div>
 </template>
 

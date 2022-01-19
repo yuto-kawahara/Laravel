@@ -1,9 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HeaderComponent from "./components/HeaderComponent";
-import TaskListComponent from "./components/TaskListComponent";
 import MessageComponent from "./components/MessageComponent";
 import CounterComponent from "./components/CounterComponent";
+
+import router from "./router";
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -14,18 +15,18 @@ require("./bootstrap");
 
 window.Vue = require("vue").default;
 
-Vue.use(VueRouter);
+// Vue.use(VueRouter);
 
-const router = new VueRouter({
-    mode: "history",
-    routes: [
-        {
-            path: "/tasks",
-            name: "task.list",
-            component: TaskListComponent,
-        },
-    ],
-});
+// const router = new VueRouter({
+//     mode: "history",
+//     routes: [
+//         {
+//             path: "/tasks",
+//             name: "task.list",
+//             component: TaskListComponent,
+//         },
+//     ],
+// });
 
 /**
  * The following block of code may be used to automatically register your
