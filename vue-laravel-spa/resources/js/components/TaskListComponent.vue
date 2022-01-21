@@ -13,49 +13,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Title1</td>
-                    <td>Content1</td>
-                    <td>Ichiro</td>
+                <tr v-for="(task, index) in tasks" :key="index">
+                    <th scope="row">{{ task.id }}</th>
+                    <td>{{ task.title }}</td>
+                    <td>{{ task.content }}</td>
+                    <td>{{ task.person_in_change }}</td>
                     <td>
-                        <button class="btn btn-primary">Show</button>
+                        <button class="btn">Show</button>
                     </td>
                     <td>
-                        <button class="btn btn-success">Edit</button>
+                        <button class="btn">Edit</button>
                     </td>
                     <td>
-                        <button class="btn btn-danger">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Title2</td>
-                    <td>Content2</td>
-                    <td>Jiro</td>
-                    <td>
-                        <button class="btn btn-primary">Show</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-success">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-danger">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Title3</td>
-                    <td>Content3</td>
-                    <td>Saburo</td>
-                    <td>
-                        <button class="btn btn-primary">Show</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-success">Edit</button>
-                    </td>
-                    <td>
-                        <button class="btn btn-danger">Delete</button>
+                        <button class="btn">Delete</button>
                     </td>
                 </tr>
             </tbody>
@@ -67,5 +37,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            tasks: [],
+        };
+    },
+    methods: {
+        getTasks() {
+            axios.get("/api/tasks").then((res) => {
+                this.tasks = res.data;
+            });
+        },
+    },
+    mounted() {
+        this.getTasks();
+    },
+};
 </script>
