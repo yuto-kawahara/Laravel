@@ -1,3 +1,18 @@
 .btn {
-    @apply py-2 px-4 text-white bg-blue-500 border border-blue-500 mr-5 hover:bg-blue-400 hover:border-blue-300 rounded;
+    @apply py-2 px-4 text-white bg-blue-500 border-blue-500 mr-5 rounded;
+}
+
+.show_btn {
+    @extend .btn;
+    @apply bg-blue-500 border-blue-500  hover:bg-blue-400 hover:border-blue-300;
+}
+
+.edit_btn {
+    @extend .btn;
+    @apply bg-green-500 border-green-500  hover:bg-green-400 hover:border-green-300;
+}
+
+.delete_btn {
+    @extend .btn;
+    @apply bg-red-500 border-red-500  hover:bg-red-400 hover:border-red-300;
 }

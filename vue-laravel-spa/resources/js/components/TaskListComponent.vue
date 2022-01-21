@@ -19,13 +19,13 @@
                     <td>{{ task.content }}</td>
                     <td>{{ task.person_in_change }}</td>
                     <td>
-                        <button class="btn">Show</button>
+                        <button class="show_btn">Show</button>
                     </td>
                     <td>
-                        <button class="btn">Edit</button>
+                        <button class="edit_btn">Edit</button>
                     </td>
                     <td>
-                        <button class="btn">Delete</button>
+                        <button class="delete_btn">Delete</button>
                     </td>
                 </tr>
             </tbody>
