@@ -19,7 +19,14 @@
                     <td>{{ task.content }}</td>
                     <td>{{ task.person_in_change }}</td>
                     <td>
-                        <button class="show_btn">Show</button>
+                        <router-link
+                            v-bind:to="{
+                                name: 'task.show',
+                                params: { taskId: task.id },
+                            }"
+                        >
+                            <button class="show_btn">Show</button>
+                        </router-link>
                     </td>
                     <td>
                         <button class="edit_btn">Edit</button>

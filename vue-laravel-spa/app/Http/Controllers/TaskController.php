@@ -13,4 +13,9 @@ class TaskController extends Controller
     {
         return Task::all();
     }
+
+    public function show(Task $task)
+    {
+        return $task;
+    }
 }
