@@ -69,7 +69,7 @@ export default {
             });
         },
         deleteTask(id) {
-            axios.post("/api/tasks/" + id).then((res) => {
+            axios.delete("/api/tasks/" + id).then((res) => {
                 this.getTasks();
             });
         },

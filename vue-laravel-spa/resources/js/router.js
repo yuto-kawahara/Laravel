@@ -4,6 +4,7 @@ import HomeComponent from "./components/HomeComponent";
 import TaskListComponent from "./components/TaskListComponent";
 import TaskShowComponent from "./components/TaskShowComponent";
 import TaskEditComponent from "./components/TaskEditComponent";
+import TaskCreateComponent from "./components/TaskCreateComponent";
 
 Vue.use(Router);
 
@@ -19,6 +20,11 @@ export default new Router({
             path: "/tasks",
             name: "task.list",
             component: TaskListComponent,
+        },
+        {
+            path: "/tasks",
+            name: "task.create",
+            component: TaskCreateComponent,
         },
         {
             path: "/tasks/:taskId",
