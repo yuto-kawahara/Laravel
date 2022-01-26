@@ -15,6 +15,12 @@
                     <router-link v-bind:to="{ name: 'task.create' }">
                         <button class="btn">ADD</button>
                     </router-link>
+                    <router-link v-bind:to="{ name: 'auth.login' }">
+                        <button class="btn">ログイン</button>
+                    </router-link>
+                    <router-link v-bind:to="{ name: 'auth.register' }">
+                        <button class="btn">新規登録</button>
+                    </router-link>
                 </div>
             </nav>
         </div>

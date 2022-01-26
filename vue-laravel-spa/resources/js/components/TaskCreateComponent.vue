@@ -9,7 +9,7 @@
                         >
                         <input
                             type="text"
-                            class="col-sm-9 form-control-plaintext"
+                            class="form"
                             id="title"
                             v-model="task.title"
                         />
@@ -20,7 +20,7 @@
                         >
                         <input
                             type="text"
-                            class="col-sm-9 form-control-plaintext"
+                            class="form"
                             id="content"
                             v-model="task.content"
                         />
@@ -33,7 +33,7 @@
                         >
                         <input
                             type="text"
-                            class="col-sm-9 form-control-plaintext"
+                            class="form"
                             id="person-in-charge"
                             v-model="task.person_in_charge"
                         />
