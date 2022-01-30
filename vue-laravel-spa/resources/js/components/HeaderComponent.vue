@@ -9,10 +9,10 @@
                 </router-link>
 
                 <div>
-                    <router-link v-bind:to="{ name: 'task.list' }">
+                    <router-link v-if="ok" v-bind:to="{ name: 'task.list' }">
                         <button class="btn">List</button>
                     </router-link>
-                    <router-link v-bind:to="{ name: 'task.create' }">
+                    <router-link v-else v-bind:to="{ name: 'task.create' }">
                         <button class="btn">ADD</button>
                     </router-link>
                     <router-link v-bind:to="{ name: 'auth.login' }">
@@ -28,5 +28,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            ok: false,
+        };
+    },
+};
 </script>
